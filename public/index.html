@@ -1,0 +1,41 @@
+<!-- /public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Countdown</h1>
+        
+        <!-- Event form -->
+        <div id="event-form">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" placeholder="Enter event name">
+            
+            <label for="event-date">Event Date & Time:</label>
+            <input type="datetime-local" id="event-date" onfocus="removeTodayOption()">
+            
+            <!-- Start button -->
+            <button id="start-countdown" disabled>Start</button>
+        </div>
+
+        <!-- Predefined Events Section -->
+        <div id="predefined-events">
+            <h3>Or select a predefined event:</h3>
+            <button class="event-button" onclick="startPredefinedEvent('New Year')">New Year</button>
+            <button class="event-button" onclick="startPredefinedEvent('Valentine\'s Day')">Valentine's Day</button>
+            <button class="event-button" onclick="startPredefinedEvent('Halloween')">Halloween</button>
+            <button class="event-button" onclick="startPredefinedEvent('Christmas')">Christmas</button>
+        </div>
+
+        <!-- Countdown display -->
+        <div id="countdown"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

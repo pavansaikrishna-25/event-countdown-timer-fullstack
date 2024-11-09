@@ -1,0 +1,80 @@
+/* /public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFA500, #FF4500); /* Gradient from orange to red */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+#event-form {
+    margin-bottom: 20px;
+}
+
+#event-form input,
+#event-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#predefined-events {
+    margin-top: 20px;
+}
+
+#predefined-events h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.event-button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.event-button:hover {
+    background-color: #FF4500;
+}
+
+button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+
+#start-countdown:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#countdown {
+    font-size: 2em;
+    color: #ff6347;
+    margin-top: 20px;
+}
